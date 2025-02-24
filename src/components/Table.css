@@ -1,0 +1,190 @@
+.table-container {
+  padding: 10px; 
+  margin: 0 auto; 
+  font-family: "Poppins", serif;
+  background-color: #f9f9f9;
+  font-size: 90%;
+  border-radius: 5px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1); 
+}
+
+.table-heading {
+  font-family: "Poppins", serif;
+  text-align: center;
+  font-weight: bolder;
+  font-size: 200%;
+  margin-bottom: 2px;
+  text-transform: capitalize;
+}
+
+.table-heading:hover {
+  color: black;
+}
+
+.table-wrapper {
+  overflow-x: auto;
+  margin: 5px 0; 
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.table th,
+.table td {
+  padding: 5px; 
+  border: 1px solid #ddd;
+  text-align: left;
+}
+
+.table th:first-child,
+.table td:first-child {
+  width: 5%; 
+  max-width: 100px; 
+  text-align: center;
+  overflow: auto;
+  text-overflow: ellipsis; 
+  white-space: nowrap;
+}
+
+.table th:nth-child(2),
+.table td:nth-child(2) {
+  width: 10%;
+  text-align: center;
+}
+
+.table th:nth-child(3),
+.table td:nth-child(3) {
+  width: 10%;
+  text-align: center;
+}
+
+.table th:nth-child(4),
+.table td:nth-child(4) {
+  width: 20%;
+  text-align: center;
+}
+
+.table th:nth-child(5),
+.table td:nth-child(5) {
+  width: 10%;
+  text-align: center;
+}
+
+.table th:nth-child(6),
+.table td:nth-child(6) {
+  width: 12%;
+  text-align: center;
+}
+
+tfoot td {
+  padding-top: 10px;
+}
+
+tfoot InputGroup {
+  width: 100%;
+}
+
+.search-bar-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 5px;
+}
+
+.search-bar {
+  width: 70%;
+  max-width: 400px;
+  padding: 8px 12px; 
+  font-size: 14px; 
+  color: #333;
+}
+
+.search-bar:focus {
+  outline: none;
+  border-color: #007bff;
+}
+
+.search-bar::placeholder {
+  color: darkgray;
+  font-size: 13px;
+}
+
+.pagination-controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.pagination-controls button {
+  padding: 5px 10px;
+  font-size: 12px;
+  color: grey;
+  font-weight: bold;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  background-color: #f9f9f9;
+  cursor: pointer;
+}
+
+.pagination-controls button:hover {
+  color: black;
+  border-color: #007bff;
+}
+
+.pagination-controls button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.table td:last-child {
+  display: flex;
+  gap: 8px; 
+  align-items: center;
+}
+
+.table td button {
+  font-size: 12px;
+  padding: 5px 8px;
+  border-radius: 3px;
+  background-color: #f0f0f0;
+  cursor: pointer;
+}
+
+button {
+  cursor: pointer;
+}
+
+button:disabled {
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+.bp4-button {
+  min-width: 50px;
+  text-align: center;
+}
+
+
+/* gender section */
+.gender-select {
+  width: 100%;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+  font-size: 13px;
+  color: #333;
+  box-sizing: border-box;
+}
+
+.gender-select:focus {
+  outline: none;
+  border-color: #137cbd; /* Blueprint.js primary color we can change this color according to the form...*/
+  background-color: #fff;
+}
+
+.gender-select option {
+  padding: 5px;
+  font-size: 13px;
+}

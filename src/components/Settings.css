@@ -1,0 +1,76 @@
+.settings-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f9;
+    transition: background-color 0.3s ease;
+}
+
+.settings-container.dark-mode {
+    background-color: #2f2f2f; 
+}
+
+.settings-box {
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.settings-box.dark-box {
+    background-color: #3a3a3a; 
+    color: white;
+}
+
+.settings-header {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    transition: color 0.3s ease;
+}
+
+.settings-header.dark-header {
+    color: #fff;
+}
+
+.settings-option {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.settings-label {
+    font-size: 1.2rem;
+    color: #333;
+    font-family: Arial, sans-serif;
+    transition: color 0.3s ease;
+}
+
+.settings-label.dark-label {
+    color: #ccc;
+}
+
+.settings-checkbox {
+    width: 30px;
+    height: 30px;
+    transition: background-color 0.3s ease;
+}
+
+.settings-checkbox.dark-checkbox {
+    background-color: #444;
+    border: 1px solid #ccc;
+}
+
+.settings-checkbox:checked.dark-checkbox {
+    background-color: #00aaff;
+}
+
+.settings-checkbox:hover {
+    background-color: #0099cc;
+    cursor: pointer;
+}

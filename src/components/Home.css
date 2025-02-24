@@ -1,0 +1,273 @@
+body {
+    font-family: "Poppins", serif;
+    background-color: #f4f7fc;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+}
+
+.home-container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    overflow: hidden; 
+}
+
+.header {
+    background-color: #1560bd;
+    padding: 20px;
+    color: white;
+}
+
+.header-title {
+    margin: 0;
+    font-size: 2rem;
+}
+
+.profile-button {
+    margin-top: 10px;
+    background-color: #0088cc;
+    padding: 10px;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.main-content {
+    padding: 20px;
+    flex-grow: 1;
+    overflow-y: auto; 
+    padding-bottom: 100px; 
+}
+
+.welcome-section {
+    margin-bottom: 30px;
+}
+
+.welcome-title {
+    font-size: 1.8rem;
+    font-weight: 500;
+}
+
+.stats-section {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 30px;
+}
+
+.stat-card {
+    background-color: #1560bd;
+    padding: 20px;
+    color: white;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 30%;
+}
+
+.stat-value {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.manage-employees{
+    display: flex;
+    gap: 300px; 
+    position: relative;
+    left: 150px;
+}
+
+.add-employee-button,
+.add-task-button {
+    
+    padding: 10px 20px;
+    background-color: #0088cc;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+    margin-right: 20px;
+}
+
+.employee-list {
+    margin-top: 20px;
+    font-size: larger;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+
+.employee-item {
+    margin-bottom: 20px;
+    margin-top: 30px;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+}
+
+.task-list {
+    margin-top: 10px;
+    max-height: 300px; 
+    overflow-y: auto; 
+}
+
+.task-list-head {
+    margin-bottom: 20px;
+    font-weight: 500;
+}
+
+.task-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.task-status {
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+.task-complete {
+    color: green;
+}
+
+.task-incomplete {
+    color: red;
+}
+
+.task-deadline {
+    font-size: 0.9rem;
+    color: #666;
+}
+
+.mark-task-btn {
+    background-color: green;
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 5px 10px;
+    font-size: 0.9rem;
+    border-radius: 3px;
+    display: inline-block;
+    margin-right: 10px; 
+}
+
+/* Modal Styling */
+.modal-title {
+    padding: 5px;
+    text-align: center;
+    font-size: x-large;
+    font-weight: bold;
+}
+
+.modal {
+    font-family: "Poppins", serif;
+    max-width: 500px;
+    padding: 20px;
+    position: relative;
+    left: 700px;
+    top: 150px;
+}
+
+.modal-buttons {
+    display: flex;
+    justify-content: space-between;
+}
+
+.cancel-button,
+.submit-button {
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.cancel-button {
+    background-color: orangered;
+    color: whitesmoke;
+}
+
+.submit-button {
+    background-color: #0088cc;
+    color: white;
+}
+
+.input-group {
+    margin-bottom: 15px;
+}
+
+.input-group label {
+    display: block;
+    font-size: 1rem;
+    margin-bottom: 5px;
+}
+
+input,
+select {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+}
+
+.employee-list-container {
+    height: auto;  
+    margin-top: 20px;
+    padding: 10px;
+}
+
+.employee-table {
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed; 
+}
+
+.employee-table th,
+.employee-table td {
+    padding: 10px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+.employee-table th {
+    background-color: #1560bd;
+    color: white;
+    font-size: 1rem;
+}
+
+.employee-table td {
+    font-size: 0.9rem;
+}
+
+button {
+    margin: 10px;
+    padding: 10px 20px; 
+    font-size: 14px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button.complete {
+    background-color: #007bff; 
+    color: white;
+}
+
+button.complete:hover {
+    background-color: #0056b3; 
+}
+
+button.undo {
+    background-color: #ff5722; 
+    color: white;
+}
+
+button.undo:hover {
+    background-color: #e64a19; 
+}

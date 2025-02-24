@@ -1,0 +1,46 @@
+/* light theme */
+:root {
+    --background-color: #ffffff;
+    --text-color: #333333;
+    --card-background: #f9f9f9;
+    --button-bg: #007bff;
+    --button-color: #ffffff;
+}
+
+/* dark theme */
+body.dark {
+    --background-color: #1e1e1e;
+    --text-color: #f1f1f1;
+    --card-background: #333333;
+    --button-bg: #555555;
+    --button-color: #ffffff;
+}
+
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.toggle-button {
+    background-color: var(--button-bg);
+    color: var(--button-color);
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+.toggle-button:hover {
+    background-color: #444444;
+}
+
+.dark-mode-toggle {
+    text-align: center;
+    margin: 20px 0;
+}
