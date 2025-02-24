@@ -1,5 +1,5 @@
 {
-  "homepage": "https://Umaiorubagan08.github.io/my-react-app",
+  "homepage": "https://github.com/Umaiorubagan08/full_stack_project",
   "name": "my-app",
   "version": "0.1.0",
   "private": true,
@@ -19,6 +19,7 @@
     "framer-motion": "^12.4.5",
     "json-server": "^1.0.0-beta.3",
     "modulus": "^6.5.0",
+    "npm": "^11.1.0",
     "react": "^18.3.1",
     "react-chartjs-2": "^5.3.0",
     "react-dom": "^18.3.1",
